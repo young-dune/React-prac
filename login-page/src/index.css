@@ -1,0 +1,97 @@
+.page {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /*정확하게 가운데로 정렬할 때 사용*/
+
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
+
+    background-color: #FFFAEC;
+
+    overflow: hidden;
+    /*넘치는 부분 있을 때 숨겨짐 속성*/
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.titleWrap {
+    margin-top: 90px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #262626;
+}
+
+.contentWrap {
+    margin-top: 28px;
+    flex: 1;
+    /*flex: 1 -->
+    flex grow, shrink값이 1이고 basis는 0이라는 소리
+    이는 flex 박스의 크기에 따라 flex item의 크기도 커지거나 작아진다는 뜻.
+    */
+}
+
+.inputTitle {
+    font-size: 12px;
+    font-weight: 600;
+    color: #262626;
+
+}
+
+.inputWrap {
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #F5ECD5;
+    margin-top: 8px;
+    padding: 16px;
+}
+
+.inputWrap:focus-within {
+    border: 1px solid #578E7E;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 17px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input::placeholder {
+    color: #dadada;
+}
+
+.errorMsgWrap {
+    margin-top: 8px;
+    color: #ef0000;
+    font-size: 12px;
+
+}
+
+.bottomBtn {
+    width: 100%;
+    height: 48px;
+    border: none;
+    font-weight: 700;
+    background-color: #BAD8B6;
+    border-radius: 64px;
+    color: white;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.bottomBtn:disabled {
+    /*버튼이 활성화되지 않았을 때*/
+    background-color: #dadada;
+    color: white;
+
+}
